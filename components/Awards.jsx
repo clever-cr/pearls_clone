@@ -52,9 +52,11 @@ const Awards = () => {
     },
   ];
   return (
-    <div className="px-[210px] pt-[100px]">
-      <h3>RECOGNITION & AWARDS</h3>
-      <div className="grid grid-cols-2 items-center gap-x-5 gap-y-[59px] pt-[49px]">
+    <div className="px-[210px] pt-[100px] pb-[134px]">
+      <h3 className="text-[22px] leading-[22px] text-primary">
+        RECOGNITION & AWARDS
+      </h3>
+      <div className="grid grid-cols-2 items-center gap-x-5 gap-y-[59px] pt-24">
         {data.map((item, index) => {
           return (
             <div key={index}>
@@ -64,11 +66,11 @@ const Awards = () => {
                     className={`${index == [0] ? "w-[280px] h-[74px] " : ""} ${
                       index == [2] ? "w-[230px] h-[75px]" : ""
                     } ${index == [5] ? "w-[149px] h-[86px]" : ""} ${
-                      index == [6] ? "w-[212px] h-[85px] -mt-8" : ""
-                    }  ${index == [7] ? " -mt-5" : ""}  ${
-                      index == [4] ? " -mt-5" : ""
-                    }  ${index == [3] ? " -mt-8" : ""}  ${
-                      index == [1] ? "-mt-8" : ""
+                      index == [6] ? "w-[212px] h-[85px] -mt-8 px-2" : ""
+                    }  ${index == [7] ? "-mt-4 px-2" : ""}  ${
+                      index == [4] ? "-mt-4" : ""
+                    }  ${index == [3] ? "-mt-4 px-2" : ""}  ${
+                      index == [1] ? "-mt-6" : ""
                     }  -mt-12 bg-white `}
                     src={item.image}
                     alt="image"
