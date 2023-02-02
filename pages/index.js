@@ -1,6 +1,7 @@
 import React from "react";
 import Awards from "../components/Awards";
 import ContactUs from "../components/ContactUs";
+import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 import Innovation from "../components/Innovation";
 import NavBar from "../components/NavBar";
@@ -21,6 +22,7 @@ const index = () => {
       <Technologies />
       <Awards />
       <ContactUs />
+      <Footer />
     </div>
   );
 };
