@@ -39,7 +39,7 @@ const Innovation = () => {
           <div
             key={index}
             className={`gap-x-[57px]- pt-[30px] relative- ${
-              index == 1 || index == 3 ? "flex flex-row-reverse " : "flex "
+              index == 1 || index == 3 ? "flex flex-row-reverse" : "flex"
             }`}
           >
             <div className="py-8">
