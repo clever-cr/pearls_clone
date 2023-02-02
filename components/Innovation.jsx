@@ -33,23 +33,20 @@ const Innovation = () => {
   ];
 
   return (
-    <div className="px-[61px]">
+    <div className="px-[61px]  gap-40">
       {data.map((item, index) => {
         return (
-          <div
-            key={index}
-            className={`gap-x-[57px]- pt-[30px] relative- ${
-              index == 1 || index == 3 ? "flex flex-row-reverse" : "flex"
-            }`}
-          >
-            <div className="py-8">
+          <div key={index} className={` pt-[30px] relative flex`}>
+            <div className="py-8 ">
               <div
-                className={`flex flex-col space-y-[25px] bg-[#FAFAFA] absolute- w-[811px] h-[301px] px-[81px] pt-[81px]- py-12 `}
+                className={`flex absolute  flex-col space-y-[25px] bg-[#FAFAFA]  w-full h-[301px] px-[81px] pt-[81px] py-12 ${
+                  index == 1 || index == 3 ? "pl-[644px]" : ""
+                } `}
               >
                 <h4 className="text-[26px] leading-9 text-gray">
                   {item.title}
                 </h4>
-                <p className="text-[20px] leading-8 text-secondary">
+                <p className="text-[20px] leading-8 text-secondary max-w-2xl">
                   {item.description}
                 </p>
                 <Link
@@ -60,8 +57,15 @@ const Innovation = () => {
                 </Link>
               </div>
             </div>
-
-            <img className="w-[587px] h-[391px] z-10" src={item.img} alt="" />
+            <div className=" z-10">
+              <img
+                className={`w-[587px] h-[391px]  ${
+                  index == 1 || index == 3 ? "" : "ml-[812px]"
+                }`}
+                src={item.img}
+                alt=""
+              />
+            </div>
           </div>
         );
       })}
